@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  studio_id: 
+  user_id: 
+  title: MyString
+  date: MyString
+  field: MyString
+  client: MyString
+
+two:
+  studio_id: 
+  user_id: 
+  title: MyString
+  date: MyString
+  field: MyString
+  client: MyString
