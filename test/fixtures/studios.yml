@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  owner: MyString
+  established: MyString
+  fields: MyString
+  clients: MyText
+  user_id: 
+  freelance: false
+  size: MyString
+
+two:
+  name: MyString
+  owner: MyString
+  established: MyString
+  fields: MyString
+  clients: MyText
+  user_id: 
+  freelance: false
+  size: MyString
