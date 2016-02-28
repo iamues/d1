@@ -1,0 +1,39 @@
+<h1>Listing studios</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Owner</th>
+      <th>Established</th>
+      <th>Fields</th>
+      <th>Clients</th>
+      <th>User</th>
+      <th>Freelance</th>
+      <th>Size</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @studios.each do |studio| %>
+      <tr>
+        <td><%= studio.name %></td>
+        <td><%= studio.owner %></td>
+        <td><%= studio.established %></td>
+        <td><%= studio.fields %></td>
+        <td><%= studio.clients %></td>
+        <td><%= studio.user %></td>
+        <td><%= studio.freelance %></td>
+        <td><%= studio.size %></td>
+        <td><%= link_to 'Show', studio %></td>
+        <td><%= link_to 'Edit', edit_studio_path(studio) %></td>
+        <td><%= link_to 'Destroy', studio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Studio', new_studio_path %>

@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @studio.name %>
+</p>
+
+<p>
+  <strong>Owner:</strong>
+  <%= @studio.owner %>
+</p>
+
+<p>
+  <strong>Established:</strong>
+  <%= @studio.established %>
+</p>
+
+<p>
+  <strong>Fields:</strong>
+  <%= @studio.fields %>
+</p>
+
+<p>
+  <strong>Clients:</strong>
+  <%= @studio.clients %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @studio.user %>
+</p>
+
+<p>
+  <strong>Freelance:</strong>
+  <%= @studio.freelance %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @studio.size %>
+</p>
+
+<%= link_to 'Edit', edit_studio_path(@studio) %> |
+<%= link_to 'Back', studios_path %>
