@@ -29,6 +29,7 @@ class StudiosController < ApplicationController
   # POST /studios.json
   def create
     @studio = Studio.new(studio_params)
+    @studio.user = current_user
 
     respond_to do |format|
       if @studio.save
