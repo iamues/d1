@@ -1,0 +1,35 @@
+<h1>Listing features</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Studio</th>
+      <th>User</th>
+      <th>Title</th>
+      <th>Date</th>
+      <th>Field</th>
+      <th>Client</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @features.each do |feature| %>
+      <tr>
+        <td><%= feature.studio %></td>
+        <td><%= feature.user %></td>
+        <td><%= feature.title %></td>
+        <td><%= feature.date %></td>
+        <td><%= feature.field %></td>
+        <td><%= feature.client %></td>
+        <td><%= link_to 'Show', feature %></td>
+        <td><%= link_to 'Edit', edit_feature_path(feature) %></td>
+        <td><%= link_to 'Destroy', feature, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Feature', new_feature_path %>

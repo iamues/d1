@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Studio:</strong>
+  <%= @feature.studio %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @feature.user %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @feature.title %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @feature.date %>
+</p>
+
+<p>
+  <strong>Field:</strong>
+  <%= @feature.field %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @feature.client %>
+</p>
+
+<%= link_to 'Edit', edit_feature_path(@feature) %> |
+<%= link_to 'Back', features_path %>
